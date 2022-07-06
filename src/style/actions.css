@@ -1,0 +1,27 @@
+.action_button {
+   width: 25%;
+   height: 35px;
+ 
+  border: none;
+  margin-top: 6px;
+  background-color: white;
+  text-align: left;
+  cursor: pointer; 
+  
+}
+.action_button > img {
+  width: 16px;
+  height: 16px;
+  margin: 10px 5px 0px 5px;
+  cursor: pointer;
+}
+.addAction {
+  padding: 6px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-top: 15px;
+}
+.copyRight {
+  text-align: right;
+  margin-bottom: 10px;
+}

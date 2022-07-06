@@ -1,23 +1,19 @@
 import logo from './logo.svg';
+import { Navbar } from './componets/Navbar';
+import { Rules } from './componets/Rules';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [edit, setEdit] = useState(false);
+  const handleEdit = (value) => {
+    setEdit(value);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Navbar edit={edit} handleEdit={handleEdit}></Navbar>
+      <Rules edit={edit}></Rules>
     </div>
   );
 }
